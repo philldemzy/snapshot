@@ -1,0 +1,87 @@
+## frontEnd ##
+
+frontend/.DS_Store
+frontend/node_modules
+frontend/dist
+
+
+# local env files
+frontend/.env.local
+frontend/.env.*.local
+frontend/.env
+
+# Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Editor directories and files
+frontend/.idea
+frontend/.vscode
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+
+
+
+## backEnd ##
+
+snapshot/**/*.log
+snapshot/**/*.pot
+snapshot/**/*.pyc
+snapshot/**/__pycache__
+snapshot/**/db.sqlite3
+snapshot/**/media
+
+# Environments 
+snapshot/**/.env 
+snapshot/**/.venv 
+snapshot/**/env/ 
+snapshot/**/venv/ 
+snapshot/**/ENV/ 
+snapshot/**/env.bak/ 
+snapshot/**/venv.bak/
+
+# If you are using PyCharm # 
+# User-specific stuff
+snapshot/.idea/**/workspace.xml
+snapshot/.idea/**/tasks.xml
+snapshot/.idea/**/usage.statistics.xml
+snapshot/.idea/**/dictionaries
+snapshot/.idea/**/shelf
+
+# Generated files
+snapshot/.idea/**/contentModel.xml
+
+# Django.Python Stack
+# Byte-compiled / optimized / DLL files
+snapshot/**/*.py[cod]
+snapshot/**/*$py.class
+
+# Distribution / packaging
+snapshot/**/.Python
+snapshot/**/build/
+snapshot/**/develop-eggs/
+snapshot/**/dist/
+snapshot/**/downloads/
+snapshot/**/eggs/
+snapshot/**/.eggs/
+snapshot/**/lib/
+snapshot/**/lib64/
+snapshot/**/parts/
+snapshot/**/sdist/
+snapshot/**/var/
+snapshot/**/wheels/
+snapshot/**/share/python-wheels/
+snapshot/**/*.egg-info/
+snapshot/**/.installed.cfg
+snapshot/**/*.egg
+snapshot/**/MANIFEST
+
+# Installer logs
+snapshot/**/pip-log.txt
+snapshot/**/pip-delete-this-directory.txt

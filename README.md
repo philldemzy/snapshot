@@ -17,7 +17,7 @@ snapShot is a platform for users to pick photographers from based on thier works
 2. create a virtual environment for the django backend
 ```bash
 python -m venv env
-\env\Scripts\activate.bat
+env\Scripts\activate.bat
 python -m pip install -r requirements.txt
 ```
 

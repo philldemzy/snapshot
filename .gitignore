@@ -85,3 +85,9 @@ snapshot/**/MANIFEST
 # Installer logs
 snapshot/**/pip-log.txt
 snapshot/**/pip-delete-this-directory.txt
+
+# Exclude collected Django static files
+snapshot/**/static_collected
+
+# Exclude machine-specific vs code settings
+snapshot/**/.vscode/settings.json

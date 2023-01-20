@@ -16,6 +16,7 @@ class Photographer(models.Model):
     first_name = models.CharField(max_length=55)
     last_name = models.CharField(max_length=55)
     bio = models.CharField(max_length=200)
+    password = models.CharField(max_length=150)
     profile = models.ImageField(upload_to=profile_upload)
     brand_name = models.CharField(max_length=100)
     country = models.CharField(max_length=60)

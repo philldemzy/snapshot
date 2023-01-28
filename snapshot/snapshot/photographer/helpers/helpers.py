@@ -1,5 +1,8 @@
 from argon2 import PasswordHasher
 from argon2.exceptions import VerifyMismatchError
+from jwt import encode
+
+from django.conf import settings
 
 
 # this func returns hashed password using argon2
@@ -17,3 +20,13 @@ def is_password(password, hashed):
         return False
     except VerifyMismatchError:
         return False
+
+
+# return jwt token for logging in
+def login_photographer(user):
+    payload = {
+        'id': user.id,
+        'email': user.email,
+        'photographer': True,
+    }
+    return encode(payload, settings.SECRET_KEY, algorithm='HS256')

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from snapshotapp.views import photographer
+from .views import photographer
 
 urlpatterns = [
     path("photographer/register", photographer.register, name="register"),

@@ -6,7 +6,7 @@ from jwt.exceptions import DecodeError
 from django.http import JsonResponse
 from django.conf import settings
 
-from snapshotapp.models import Photographer
+from ..models import Photographer
 
 
 def is_photographer(view):

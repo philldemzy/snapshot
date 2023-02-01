@@ -3,9 +3,9 @@ from django.http import JsonResponse
 # Create your views here.
 from django.views.decorators.csrf import csrf_exempt
 
-from snapshotapp.helpers.decorators import is_photographer
-from snapshotapp.helpers.helpers import hash_pass, login_photographer, is_password
-from snapshotapp.models import Photographer, Media
+from ..helpers.decorators import is_photographer
+from ..helpers.helpers import hash_pass, login_photographer, is_password
+from ..models import Photographer, Media
 
 
 @csrf_exempt

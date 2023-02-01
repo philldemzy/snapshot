@@ -6,7 +6,7 @@ from jwt.exceptions import DecodeError
 from django.http import JsonResponse
 from django.conf import settings
 
-from ..models import Photographer
+from snapshotapp.models import Photographer
 
 
 def is_photographer(view):
@@ -25,6 +25,7 @@ def is_photographer(view):
         except DecodeError:
             return JsonResponse({'error': 'invalid token'}, status=403)
         except Exception as err:
+            print(err)
             return JsonResponse({'error': 'invalid token'}, status=403)
 
         # check if user exists
@@ -38,4 +39,5 @@ def is_photographer(view):
         if photographer and is_photographer_:
             func = view(request, photographer, *args, **kwargs)
             return func
+        return JsonResponse({'error': 'something went wrong'}, status=500)
     return check

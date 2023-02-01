@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PhotographerConfig(AppConfig):
+class SnapshotappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'photographer'
+    name = 'snapshotapp'

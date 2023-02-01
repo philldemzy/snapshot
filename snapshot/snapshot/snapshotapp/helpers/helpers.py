@@ -1,3 +1,5 @@
+from datetime import timezone, datetime, timedelta
+
 from argon2 import PasswordHasher
 from argon2.exceptions import VerifyMismatchError
 from jwt import encode
@@ -28,5 +30,6 @@ def login_photographer(user):
         'id': user.id,
         'email': user.email,
         'photographer': True,
+        'exp': datetime.now(tz=timezone.utc) + timedelta(hours=42)  # token expiry time
     }
     return encode(payload, settings.SECRET_KEY, algorithm='HS256')
